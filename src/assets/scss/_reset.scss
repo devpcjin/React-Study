@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+#root {
+  width: 100%;
+  min-height: 100dvh;
+}
+
+hr {
+  display: none;
+}
+img {
+  max-width: 100%;
+}
+img,
+fieldset {
+  border: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+*,
+*:focus,
+*:hover {
+  outline: none;
+}
+label,
+img,
+input,
+select,
+textarea,
+button {
+  vertical-align: middle;
+}
+main,
+header,
+section,
+nav,
+footer,
+aside,
+article,
+figure {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 500;
+  font-weight: 500;
+  letter-spacing: -0.32px;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 16px;
+  line-height: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  width: 100%;
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 500;
+  color: #242424;
+  background-color: #fff;
+  word-wrap: break-word;
+  word-break: break-all;
+  -webkit-text-size-adjust: none;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+  font-family:
+    "Spoqa Han Sans Neo",
+    "Noto Sans KR",
+    "Poppins",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Helvetica Neue",
+    "Apple SD Gothic Neo",
+    Arial,
+    sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #242424;
+  border: none;
+}
+
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea table,
+thead,
+tbody,
+tfoot,
+th,
+td,
+p,
+button,
+label,
+caption,
+legend,
+hr,
+select,
+form,
+fieldset,
+figure,
+figcaption,
+input,
+div,
+blockquote,
+pre,
+code,
+address,
+menu,
+nav,
+section,
+article,
+aside,
+object {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+input,
+select,
+table,
+textarea {
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+mark {
+  color: inherit;
+  font-weight: 700;
+  background: 0 0;
+}
+
+button,
+input {
+  background: 0 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-collapse: collapse;
+}
+
+address,
+cite,
+code,
+em {
+  font-style: normal;
+  font-weight: 500;
+}
+
+input[type="tel"],
+input[type="time"],
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="email"],
+input[type="file"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+textarea {
+  font-size: 14px;
+  color: #242424;
+  border: 1px solid #dadcde;
+  transition: all 0.5s;
+  vertical-align: middle;
+}
+input[type="tel"][readonly],
+input[type="text"][readonly],
+input[type="password"][readonly],
+input[type="search"][readonly],
+input[type="email"][readonly],
+input[type="tel"][disabled],
+input[type="text"][disabled],
+input[type="password"][disabled],
+input[type="search"][disabled],
+input[type="email"][disabled] {
+  font-size: 14px;
+  border-color: #dadcde;
+  color: #24242450;
+  border-radius: 3px;
+  -webkit-appearance: none;
+}
+input::-webkit-input-placeholder {
+  color: #b5b5b5;
+  font-size: 14px;
+  line-height: 100%;
+}
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+textarea[readonly],
+textarea[disabled] {
+  font-size: 14px;
+  font-weight: 500;
+  color: #242424;
+  background: #fff;
+  border: 1px solid #dadcde;
+  line-height: 100%;
+}
+
+button[disabled] {
+  color: #aaacae !important;
+  border-color: transparent !important;
+}
