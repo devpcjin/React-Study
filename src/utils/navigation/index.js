@@ -5,4 +5,19 @@ const navigationItem = [
     },
 ];
 
-export { navigationItem };
+const headerNavigationItm = [
+    {
+        label: "React Study",
+        key: "/study",
+    },
+    {
+        label: "Retrieve",
+        key: "/retrieve",
+    },
+    {
+        label: "Ask",
+        key: "/ask",
+    },
+];
+
+export { navigationItem, headerNavigationItm };

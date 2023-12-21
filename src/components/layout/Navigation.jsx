@@ -1,14 +1,8 @@
-import {
-    AppstoreOutlined,
-    MailOutlined,
-    SettingOutlined,
-} from "@ant-design/icons";
 import { useState } from "react";
 import { Menu } from "antd";
 import { navigationItem } from "@/utils/navigation/index.js";
-import { Outlet } from "react-router-dom";
 
-export default function Navigation() {
+export default function Navigation(props) {
     const [current, setCurrent] = useState("");
 
     const onClick = (e) => {
@@ -19,12 +13,19 @@ export default function Navigation() {
     return (
         <>
             <Menu
+                className="w-full"
                 onClick={onClick}
                 selectedKeys={[current]}
-                mode="horizontal"
-                items={navigationItem}
+                theme={props.theme}
+                mode={props.mode}
+                items={props.items}
             />
-            <Outlet />
         </>
     );
 }
+
+Navigation.defaultProps = {
+    theme: "dark",
+    items: navigationItem,
+    mode: "horizontal",
+};
