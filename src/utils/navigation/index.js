@@ -5,7 +5,7 @@ const navigationItem = [
     },
 ];
 
-const headerNavigationItm = [
+const headerNavigationItem = [
     {
         label: "React Study",
         key: "/study",
@@ -20,4 +20,19 @@ const headerNavigationItm = [
     },
 ];
 
-export { navigationItem, headerNavigationItm };
+const studySidebarItem = [
+    {
+        label: "Immutable",
+        key: "/study/immutable",
+    },
+    {
+        label: "State",
+        key: "/study/state",
+    },
+    {
+        label: "Ref",
+        key: "/study/ref",
+    },
+];
+
+export { navigationItem, headerNavigationItem, studySidebarItem };

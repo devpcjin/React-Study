@@ -13,7 +13,6 @@ export default function Navigation(props) {
     return (
         <>
             <Menu
-                className="w-full"
                 onClick={onClick}
                 selectedKeys={[current]}
                 theme={props.theme}
@@ -25,7 +24,7 @@ export default function Navigation(props) {
 }
 
 Navigation.defaultProps = {
-    theme: "dark",
+    theme: "light",
     items: navigationItem,
     mode: "horizontal",
 };
