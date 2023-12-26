@@ -1,10 +1,3 @@
-const navigationItem = [
-    {
-        label: "React Study",
-        key: "/main/study",
-    },
-];
-
 const headerNavigationItem = [
     {
         label: "Home",
@@ -13,21 +6,6 @@ const headerNavigationItem = [
     {
         label: "React Study",
         key: "/study",
-    },
-    {
-        label: "Retrieve",
-        key: "/retrieve",
-    },
-    {
-        label: "Ask",
-        key: "/ask",
-    },
-];
-
-const homeSidebarItem = [
-    {
-        label: "Home",
-        key: "/home",
     },
 ];
 
@@ -43,18 +21,15 @@ const studySidebarItem = [
         ],
     },
     {
-        label: "State",
-        key: "/study/state",
-    },
-    {
-        label: "Ref",
-        key: "/study/ref",
+        label: "Chapter3",
+        key: "/study/chapter3",
+        children: [
+            {
+                key: "1",
+                label: "jsx 문법",
+            },
+        ],
     },
 ];
 
-export {
-    navigationItem,
-    headerNavigationItem,
-    studySidebarItem,
-    homeSidebarItem,
-};
+export { headerNavigationItem, studySidebarItem };

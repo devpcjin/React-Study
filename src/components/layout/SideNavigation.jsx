@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { Menu } from "antd";
-import { navigationItem } from "@/utils/navigation/index.js";
+import { studySidebarItem } from "@/utils/navigation/index.js";
 
 export default function SideNavigation(props) {
     const navigate = useNavigate();
@@ -47,6 +47,6 @@ export default function SideNavigation(props) {
 
 SideNavigation.defaultProps = {
     theme: "light",
-    items: navigationItem,
+    items: studySidebarItem,
     mode: "horizontal",
 };

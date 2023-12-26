@@ -2,7 +2,7 @@ import Home from "@/components/Home";
 import { Routes, Route } from "react-router-dom";
 import Index from "@/pages/Index.jsx";
 import SideBarArea from "@/components/layout/SideBarArea";
-import { homeSidebarItem, studySidebarItem } from "@/utils/navigation/index.js";
+import { studySidebarItem } from "@/utils/navigation/index.js";
 import Chapter2 from "@/pages/chapter2/Index";
 
 const Router = () => {
