@@ -28,6 +28,7 @@ export default function TopNavigation() {
     return (
         <>
             <Menu
+                className="flex-1"
                 onClick={onClick}
                 selectedKeys={[current]}
                 theme="dark"

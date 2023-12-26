@@ -10,7 +10,15 @@ export default function Section4() {
         setName("");
     };
 
-    const undefinedName = undefined;
+    const [undefinedName, setUndefinedName] = useState(undefined);
+
+    const changeUndefinedNameStatus = () => {
+        if (undefinedName === undefined) {
+            setUndefinedName("Is Not Undefined");
+        } else {
+            setUndefinedName(undefined);
+        }
+    };
 
     return (
         <>
@@ -57,7 +65,12 @@ export default function Section4() {
                     <div className="pl-4">
                         <div className="mt-4">
                             <div className="my-2">
-                                <Button>undefined 해제</Button>
+                                <Button onClick={changeUndefinedNameStatus}>
+                                    undefined{" "}
+                                    {undefinedName === undefined
+                                        ? "해제"
+                                        : "설정"}
+                                </Button>
                             </div>
                             {undefinedName ||
                                 "undefined 형식이여서 대신 해당 문구를 출력합니다."}

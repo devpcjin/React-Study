@@ -1,6 +1,5 @@
 import { Layout } from "antd";
 import TopNavigation from "@/components/layout/TopNavigation.jsx";
-import { headerNavigationItem } from "@/utils/navigation/index.js";
 
 const { Header } = Layout;
 export default function RootHeader() {
