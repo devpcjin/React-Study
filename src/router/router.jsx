@@ -3,15 +3,13 @@ import { Routes, Route } from "react-router-dom";
 import Index from "@/pages/Index.jsx";
 import SideBarArea from "@/components/layout/SideBarArea";
 import { homeSidebarItem, studySidebarItem } from "@/utils/navigation/index.js";
+import Chapter2 from "@/pages/chapter2/Index";
 
 const Router = () => {
     return (
         <Routes>
             <Route path="/" element={<Index />}>
-                <Route
-                    path=""
-                    element={<SideBarArea sideMenu={homeSidebarItem} />}
-                >
+                <Route path="" element={<Home />}>
                     <Route path="home" element={<Home />}></Route>
                 </Route>
                 <Route
@@ -19,7 +17,7 @@ const Router = () => {
                     element={<SideBarArea sideMenu={studySidebarItem} />}
                 >
                     <Route path="chapter2">
-                        <Route path=":id" element={<Home />} />
+                        <Route path=":id" element={<Chapter2 />} />
                     </Route>
                 </Route>
             </Route>
