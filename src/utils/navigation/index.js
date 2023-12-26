@@ -7,6 +7,10 @@ const navigationItem = [
 
 const headerNavigationItem = [
     {
+        label: "Home",
+        key: "/",
+    },
+    {
         label: "React Study",
         key: "/study",
     },
@@ -20,10 +24,23 @@ const headerNavigationItem = [
     },
 ];
 
+const homeSidebarItem = [
+    {
+        label: "Home",
+        key: "/home",
+    },
+];
+
 const studySidebarItem = [
     {
-        label: "Immutable",
-        key: "/study/immutable",
+        label: "Chapter2",
+        key: "/study/chapter2",
+        children: [
+            {
+                key: "4",
+                label: "jsx 문법",
+            },
+        ],
     },
     {
         label: "State",
@@ -35,4 +52,9 @@ const studySidebarItem = [
     },
 ];
 
-export { navigationItem, headerNavigationItem, studySidebarItem };
+export {
+    navigationItem,
+    headerNavigationItem,
+    studySidebarItem,
+    homeSidebarItem,
+};
