@@ -11,17 +11,17 @@ const headerNavigationItem = [
 
 const studySidebarItem = [
     {
-        label: "Chapter2",
+        label: "Chapter 2. JSX",
         key: "/study/chapter2",
         children: [
             {
                 key: "4",
-                label: "jsx 문법",
+                label: "Section 4. JSX 문법",
             },
         ],
     },
     {
-        label: "Chapter3",
+        label: "Chapter 3. 컴포넌트",
         key: "/study/chapter3",
         children: [
             {
