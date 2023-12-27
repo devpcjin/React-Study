@@ -1,17 +1,7 @@
 import reactLogo from "@/assets/react.svg";
 import { Button } from "antd";
-import { useNavigate } from "react-router-dom";
 
 export default function Home() {
-    const navigate = useNavigate();
-
-    const moveToStudy = () => {
-        navigate("/study");
-
-        //TODO: 너무 매끄럽지 않음... 다른 방법이 있겠지??
-        location.reload();
-    };
-
     return (
         <>
             <div className="flex flex-col items-center justify-center">
@@ -22,7 +12,7 @@ export default function Home() {
                 <img src={reactLogo} className="h-80 w-80" />
             </div>
             <div className="my-20 flex items-center justify-center">
-                <Button onClick={moveToStudy}>Study 페이지로 이동...</Button>
+                <Button href="/study">Study 페이지로 이동...</Button>
             </div>
         </>
     );
