@@ -15,7 +15,7 @@ const studySidebarItem = [
         key: "/study/chapter2",
         children: [
             {
-                key: "4",
+                key: "2-4",
                 label: "Section 4. JSX 문법",
             },
         ],
@@ -25,11 +25,11 @@ const studySidebarItem = [
         key: "/study/chapter3",
         children: [
             {
-                key: "3",
+                key: "3-3",
                 label: "Section 3. props",
             },
             {
-                key: "4",
+                key: "3-4",
                 label: "Section 4. state",
             },
         ],

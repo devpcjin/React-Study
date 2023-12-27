@@ -9,7 +9,7 @@ export default function Chapter2() {
             <div className="mb-10">
                 <p className="text-3xl font-bold">Chapter 2. JSX</p>
             </div>
-            {id === "4" && <Section4 />}
+            {id === "2-4" && <Section4 />}
         </>
     );
 }

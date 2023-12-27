@@ -1,5 +1,6 @@
 import Section3 from "@/components/chapter3/Section3";
-import { useParams, useNavigate } from "react-router-dom";
+import Section4 from "@/components/chapter3/Section4";
+import { useParams } from "react-router-dom";
 import { studySidebarItem } from "@/utils/navigation";
 
 export default function Chapter3() {
@@ -25,7 +26,8 @@ export default function Chapter3() {
             <div className="border-b-2 pb-2">
                 <h2 className="text-xl font-bold">{getSectionTitle()}</h2>
             </div>
-            {id === "3" && <Section3 />}
+            {id === "3-3" && <Section3 />}
+            {id === "3-4" && <Section4 />}
         </>
     );
 }
