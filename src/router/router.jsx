@@ -6,6 +6,7 @@ import { studySidebarItem } from "@/utils/navigation/index.js";
 import Chapter2 from "@/pages/chapter2/Index";
 import Chapter3 from "@/pages/chapter3/Index";
 import Study from "@/pages/Study";
+import Chapter4 from "@/pages/chapter4/Index";
 
 const Router = () => {
     return (
@@ -24,6 +25,12 @@ const Router = () => {
                     </Route>
                     <Route path="chapter3">
                         <Route path=":id" element={<Chapter3 />} />
+                    </Route>
+                    <Route path="chapter4">
+                        <Route path=":id" element={<Chapter4 />} />
+                    </Route>
+                    <Route path="chapter5">
+                        <Route path=":id" element={<Chapter4 />} />
                     </Route>
                 </Route>
             </Route>

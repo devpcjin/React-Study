@@ -34,6 +34,16 @@ const studySidebarItem = [
             },
         ],
     },
+    {
+        label: "Chapter 4. 이벤트 핸들링",
+        key: "/study/chapter4",
+        children: [
+            {
+                key: "4-2",
+                label: "Section2. 예제로 이벤트 핸들링 익히기",
+            },
+        ],
+    },
 ];
 
 export { headerNavigationItem, studySidebarItem };
